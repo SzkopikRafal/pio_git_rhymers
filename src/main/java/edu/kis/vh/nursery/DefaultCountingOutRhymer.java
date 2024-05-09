@@ -12,16 +12,8 @@ public class DefaultCountingOutRhymer {
         return NUM1;
     }
 
-    public static void setNUM1(int NUM1) {
-        DefaultCountingOutRhymer.NUM1 = NUM1;
-    }
-
     public static int getNUM2() {
         return NUM2;
-    }
-
-    public static void setNUM2(int NUM2) {
-        DefaultCountingOutRhymer.NUM2 = NUM2;
     }
 
     public void countIn(int in) {
@@ -55,13 +47,5 @@ public class DefaultCountingOutRhymer {
 
     public int[] getNumbers() {
         return numbers;
-    }
-
-    public void setNumbers(int[] numbers) {
-        this.numbers = numbers;
-    }
-
-    public void setTotal(int total) {
-        this.total = total;
     }
 }
