@@ -2,15 +2,27 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    public static final int NUM1 = 12;
-    public static final int NUM2 = -1;
-    final private int[] numbers = new int[NUM1];
+    private static int NUM1 = 12;
+    private static int NUM2 = -1;
+    private int[] numbers = new int[NUM1];
 
-    public int total = NUM2;
+    private int total = NUM2;
+
+    public static int getNUM1() {
+        return NUM1;
+    }
+
+    public static int getNUM2() {
+        return NUM2;
+    }
 
     public void countIn(int in) {
         if (!isFull())
             numbers[++total] = in;
+    }
+
+    public int getTotal() {
+        return total;
     }
 
     public boolean callCheck() {
@@ -33,4 +45,7 @@ public class DefaultCountingOutRhymer {
         return numbers[total--];
     }
 
+    public int[] getNumbers() {
+        return numbers;
+    }
 }
